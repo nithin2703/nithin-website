@@ -1,0 +1,358 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: lightblue
+
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 50px;
+    background: linear-gradient(90deg, #0033cc, #0066ff);
+    color: white;
+}
+
+nav h2 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 40px;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+}
+/* Hero Section */
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #dff6ff, #ffffff);
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.hero img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+/* Get Started Button */
+
+button {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blue;
+}
+/* About Section */
+
+.about {
+    background-color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.about h2 {
+    font-size: 35px;
+    color: darkblue;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.6;
+}
+/* Services Section */
+
+.services {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.services h2 {
+    font-size: 35px;
+    color: darkblue;
+    margin-bottom: 40px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 250px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    color: darkblue;
+    font-size: 24px;
+}
+
+.card p {
+    font-size: 17px;
+    line-height: 1.5;
+}
+/* Contact Section */
+
+.contact {
+    background-color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.contact h2 {
+    font-size: 35px;
+    color: darkblue;
+    margin-bottom: 30px;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact button {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: blue;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Footer */
+
+footer {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 15px;
+    margin: 8px;
+}
+/* Mobile Responsive Design */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 16px;
+    }
+
+    .hero {
+        padding: 70px 20px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .contact form {
+        width: 90%;
+    }
+
+}
+.hero img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 30px;
+    border: 5px solid white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+.hero img {
+    transition: transform 0.3s ease;
+}
+
+.hero img:hover {
+    transform: scale(1.08);
+}
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+}
+#topBtn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1000;
+}
+#topBtn:hover {
+    background-color: blue;
+    transform: translateY(-3px);
+}
+#typingText {
+    font-size: 20px;
+    min-height: 30px;
+    color: #333;
+}
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+#topBtn {
+    display: none;
+}
+section {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+.contact input:focus,
+.contact textarea:focus {
+    outline: none;
+    border: 2px solid #0066ff;
+    box-shadow: 0 0 8px rgba(0, 102, 255, 0.2);
+}
+.contact button {
+    transition: all 0.3s ease;
+}
+
+.contact button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+}
+nav a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: yellow;
+    transform: translateY(-2px);
+}
